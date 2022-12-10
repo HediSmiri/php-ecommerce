@@ -58,16 +58,16 @@
 
 <!-- bottom footer -->
 </footer>
-<script src="../assest/js/jquery.min.js"></script>
-<script src="../assest/js/bootstrap.min.js"></script>
-<script src="../assest/js/slick.min.js"></script>
-<script src="../assest/js/nouislider.min.js"></script>
-<script src="../assest/js/jquery.zoom.min.js"></script>
-<script src="../assest/js/main.js"></script>
-<script src="../assest/js/actions.js"></script>
-<script src="../assest/js/sweetalert.min"></script>
-<script src="../assest/js/jquery.payform.min.js" charset="utf-8"></script>
-<script src="../assest/js/script.js"></script>
+<script src="./assest/js/jquery.min.js"></script>
+<script src="./assest/js/bootstrap.min.js"></script>
+<script src="./assest/js/slick.min.js"></script>
+<script src="./assest/js/nouislider.min.js"></script>
+<script src="./assest/js/jquery.zoom.min.js"></script>
+<script src="./assest/js/main.js"></script>
+<script src="./assest/js/actions.js"></script>
+<script src="./assest/js/sweetalert.min"></script>
+<script src="./assest/js/jquery.payform.min.js" charset="utf-8"></script>
+<script src="./assest/js/script.js"></script>
 
 <script>
     var c = 0;

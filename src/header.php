@@ -1,5 +1,5 @@
 <?php
-include "./helpers/conn.php";
+include "../helpers/conn.php";
 session_start();
 
 ?>
@@ -18,24 +18,24 @@ session_start();
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="./assest/css/bootstrap.min.css" />
 
 	<!-- Slick -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/slick.css" />
-	<link type="text/css" rel="stylesheet" href="../assest/css/slick-theme.css" />
+	<link type="text/css" rel="stylesheet" href="./assest/css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="./assest/css/slick-theme.css" />
 
 	<!-- nouislider -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/nouislider.min.css" />
+	<link type="text/css" rel="stylesheet" href="./assest/css/nouislider.min.css" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="../assest/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="./assest/css/font-awesome.min.css">
+	
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/style.css" />
-	<link type="text/css" rel="stylesheet" href="../assest/css/accountbtn.css" />
-
+	<link type="text/css" rel="stylesheet" href="./assest/css/style.css" />
+	<link type="text/css" rel="stylesheet" href="./assest/css/accountbtn.css" />
+	
 	<!-- Hearder CSS -->
-	<link rel="stylesheet" href="../assest/css/header.css">
+	<link rel="stylesheet" href="./assest/css/header.css">
 
 </head>
 
@@ -164,14 +164,26 @@ session_start();
 	</header>
 	<!-- /HEADER -->
 	<nav id='navigation'>
-		<!-- container -->
-		<div class="container" id="get_category_home">
-
-		</div>
-		<!-- responsive-nav -->
-
-		<!-- /container -->
-	</nav>
+			<!-- container -->
+			<div class="container" id="get_category_home">
+				<!-- <div id="responsive-nav">
+						
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="index.php">Home</a></li>
+						<li class="category" cid="1"><a href="store.php">Electronics</a></li>
+						<li class="category" cid="2"><a href="store.php">Ladies Wears</a></li>
+						<li class="category" cid="3"><a href="store.php">Mens Wear</a></li>
+						<li class="category" cid="4"><a href="store.php">Kids Wear</a></li>
+						<li class="category" cid="5"><a href="store.php">Furnitures</a></li>
+						<li class="category" cid="6"><a href="store.php">Home Appliances</a></li>
+						<li class="category" cid="7"><a href="store.php">Electronics Gadgets</a></li>
+					
+					</ul>
+						
+				</div> -->
+			</div>
+			<!-- /container -->
+		</nav>
 
 
 	<!-- NAVIGATION -->
