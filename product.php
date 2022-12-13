@@ -1,37 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>E-commerce Website</title>
-
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/bootstrap.min.css" />
-
-	<!-- Slick -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/slick.css" />
-	<link type="text/css" rel="stylesheet" href="../assest/css/slick-theme.css" />
-
-	<!-- nouislider -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/nouislider.min.css" />
-
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="../assest/css/font-awesome.min.css">
-	
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="../assest/css/style.css" />
-	<link type="text/css" rel="stylesheet" href="../assest/css/accountbtn.css" />
-	
-	<!-- Hearder CSS -->
-	<link rel="stylesheet" href="../assest/css/header.css">
-
-</head>
 <?php
 include "header.php";
 ?>
@@ -87,7 +53,7 @@ include "header.php";
             <!-- Product main img -->
 
             <?php
-            include '../helpers/conn.php';
+            include './helpers/conn.php';
             $product_id = $_GET['p'];
 
             $sql = " SELECT * FROM products ";
@@ -105,19 +71,19 @@ include "header.php";
                                 <div class="col-md-5 col-md-push-2">
                                 <div id="product-main-img">
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -125,19 +91,19 @@ include "header.php";
                                 <div class="col-md-2  col-md-pull-5">
                                 <div id="product-imgs">
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . 'g" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . 'g" alt="">
                                     </div>
 
                                     <div class="product-preview">
-                                        <img src="../assest/img/img_p/' . $row['product_image'] . '" alt="">
+                                        <img src="./assest/img/img_p/' . $row['product_image'] . '" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -499,7 +465,7 @@ include "header.php";
                                 <div class='col-md-3 col-xs-6'>
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
-										<img src='../assest/img/img_p//$pro_image' style='max-height: 170px;' alt=''>
+										<img src='./assest/img/img_p/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
 											<span class='sale'>-30%</span>
 											<span class='new'>NEW</span>
