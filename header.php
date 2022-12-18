@@ -93,7 +93,7 @@ session_start();
 					<div class="col-md-3">
 						<div class="header-logo">
 							<a href="index.php" class="logo">
-								<font style="font-style:normal; font-size: 33px;color: aliceblue;font-family: serif">
+								<font style="font-style:normal; font-size: 33px;color: black;font-family: serif;font-weight:600">
 									E-commerce Website
 								</font>
 
