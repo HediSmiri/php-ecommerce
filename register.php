@@ -108,7 +108,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 			</div>
 		";
 		exit();
-	} else {
+	} 
 		
 		$sql = "INSERT INTO `user_info` 
 		(`user_id`, `first_name`, `last_name`, `email`, 
@@ -125,7 +125,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 			echo "<script> location.href='store.php'; </script>";
             exit;
 		}
-	}
+	
 	}
 	
 }

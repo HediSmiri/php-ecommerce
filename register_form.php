@@ -9,7 +9,7 @@
     </style>
     
     <div class="container-fluid">
-        <form id="signup_form" onsubmit="return false" class="login100-form">
+        <form id="signup_form" class="login100-form" action="register.php" method="POST">
             <div class="billing-details jumbotron">
                 
             <div class="section-title">

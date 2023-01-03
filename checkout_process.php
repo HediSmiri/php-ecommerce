@@ -55,12 +55,12 @@ if (isset($_SESSION["uid"])) {
             $prod_qty=$prod_qty_+$str;
             $sub_total=(int)$prod_price*(int)$prod_qty;
             $sql1="INSERT INTO `order_products` 
-            (`order_pro_id`,`order_id`,`product_id`,`qty`,`amt`) 
-            VALUES (NULL, '$order_id','$prod_id','$prod_qty','$sub_total')";
+            (`order_id`,`product_id`,`qty`,`amt`) 
+            VALUES ('$order_id','$prod_id','$prod_qty','$sub_total')";
             if(mysqli_query($con,$sql1)){
                 $del_sql="DELETE from cart where user_id=$user_id";
                 if(mysqli_query($con,$del_sql)){
-                    echo"<script>window.location.href='store.php'</script>";
+                    echo"<script>window.location.href='order_successful.php'</script>";
                 }else{
                     echo(mysqli_error($con));
                 }
@@ -82,4 +82,8 @@ if (isset($_SESSION["uid"])) {
     echo"<script>window.location.href='index.php'</script>";
 }
 	
+
+
+
+
 ?>
