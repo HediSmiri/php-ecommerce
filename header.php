@@ -64,14 +64,14 @@ session_start();
                                     
                                   </div>
                                 </div>';
-						} else {
+						}
+						else {
 							echo '
                                 <div class="dropdownn">
                                   <a href="#" class="dropdownn" data-toggle="modal" data-target="#myModal" ><i class="fa fa-user-o"></i> My Account</a>
                                   <div class="dropdownn-content">
                                     <a href="" data-toggle="modal" data-target="#Modal_login"><i class="fa fa-sign-in" aria-hidden="true" ></i>Login</a>
                                     <a href="" data-toggle="modal" data-target="#Modal_register"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a>
-                                    
                                   </div>
                                 </div>';
 						}

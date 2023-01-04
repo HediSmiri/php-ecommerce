@@ -1,6 +1,7 @@
 <?php
 session_start();
 include "helpers/conn.php";
+
 if (isset($_POST["f_name"])) {
 
 	$f_name = $_POST["f_name"];
@@ -96,6 +97,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		";
 		exit();
 	}
+
 	//existing email address in our database
 	$sql = "SELECT user_id FROM user_info WHERE email = '$email' LIMIT 1" ;
 	$check_query = mysqli_query($con,$sql);
@@ -111,9 +113,9 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	} 
 		
 		$sql = "INSERT INTO `user_info` 
-		(`user_id`, `first_name`, `last_name`, `email`, 
+		(`first_name`, `last_name`, `email`, 
 		`password`, `mobile`, `address1`, `address2`) 
-		VALUES (NULL, '$f_name', '$l_name', '$email', 
+		VALUES ('$f_name', '$l_name', '$email', 
 		'$password', '$mobile', '$address1', '$address2')";
 		$run_query = mysqli_query($con,$sql);
 		$_SESSION["uid"] = mysqli_insert_id($con);
@@ -129,5 +131,3 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	}
 	
 }
-
-?>
