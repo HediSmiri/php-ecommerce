@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "helpers/db.php";
+include "helpers/conn.php";
 if (isset($_POST["review"])) {
 
 	$name = $_POST["name"];

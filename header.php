@@ -13,7 +13,7 @@ session_start();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>E-commerce Website</title>
+	<title>IITShop</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -93,8 +93,8 @@ session_start();
 					<div class="col-md-3">
 						<div class="header-logo">
 							<a href="index.php" class="logo">
-								<font style="font-style:normal; font-size: 33px;color: black;font-family: serif;font-weight:600">
-									E-commerce Website
+								<font style="    font-style: normal;font-size: 49px;color: #5457a9;font-family: serif;font-weight: 600;">
+								IITShop
 								</font>
 
 							</a>
